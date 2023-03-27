@@ -32,7 +32,7 @@ public class Atividade {
             System.out.println("A divisão entre os dois é: " + divisao);
         }
         else {
-            
+
         }
     }
     public void exercicio2() {
@@ -57,4 +57,22 @@ public class Atividade {
 
         }
     } 
-}
+    public void exercicio3() {
+      System.out.println("Informe a quantidade (em kg) de maças compradas");
+      double maca = sc.nextDouble();
+
+      System.out.println("Informe a quantidade (em kg) de bananas compradas");
+      double banana = sc.nextDouble();
+
+      System.out.println("Informe a quantidade (em kg) de morangos comprados");
+      double morango = sc.nextDouble();
+
+      double valorTotal = morango * 3.5 + maca * 2.3 + banana * 1.8;
+
+      if (morango + maca + banana > 15 || valorTotal > 30) {
+        valorTotal *= 0.9;
+        // aplica o desconto de 10%
+      }
+      System.out.println("O valor total da compra é: " + valorTotal + "R$");
+      }  
+    }
