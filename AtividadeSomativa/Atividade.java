@@ -2,6 +2,8 @@ package AtividadeSomativa;
 
 import java.util.Scanner;
 
+import javax.lang.model.util.ElementScanner14;
+
 public class Atividade {
     Scanner sc =  new Scanner(System.in);
 
@@ -29,5 +31,30 @@ public class Atividade {
             double divisao = numeroUm / numeroDois;
             System.out.println("A divisão entre os dois é: " + divisao);
         }
+        else {
+            
+        }
     }
+    public void exercicio2() {
+        System.out.println("Informe o seu nº de matrícula: ");
+        double numeroMatricula = sc.nextDouble();
+        if (numeroMatricula % 4 == 0) {
+            System.out.println("Você caiu no time de Chris");
+        }
+
+        else if (numeroMatricula % 4 == 1) {
+            System.out.println("Você caiu no time de Greg");
+        }
+        
+        else if (numeroMatricula % 4 == 2) {
+            System.out.println("Você caiu no time de Caruso");
+        }
+        
+        else if (numeroMatricula % 4 == 3) {
+            System.out.println("Você caiu no time de Jerome");
+        }
+        else {
+
+        }
+    } 
 }
